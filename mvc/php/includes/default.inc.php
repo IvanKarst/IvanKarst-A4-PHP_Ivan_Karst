@@ -1,6 +1,6 @@
 <?php
 	//constants for including files
-	define("WEB_ROOT", DIRECTORY_SEPARATOR . "opdrachten_school/PHP_A4/mvc" . DIRECTORY_SEPARATOR);
+	define("WEB_ROOT", DIRECTORY_SEPARATOR . "IvanKarst-A4-PHP_Ivan_Karst/mvc" . DIRECTORY_SEPARATOR);
 	define("LOCAL_ROOT", $_SERVER['DOCUMENT_ROOT'].str_replace('\\','/',WEB_ROOT));
 
 	//function for loading class files inclusive namespaces

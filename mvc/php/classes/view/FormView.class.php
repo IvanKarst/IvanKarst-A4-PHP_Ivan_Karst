@@ -31,7 +31,11 @@
 				strip_tags($_POST['password']);
 				$this->ham($_POST);
 				if($_SESSION['check'] == false){
-					$_SESSION['add']  = '<i style="text-decoration:underlined;">Nickname of Password fout</i>';
+					$_SESSION['add']  = '<i class="warning">Nickname of Password fout</i>
+						<br/>
+					<a class="link" href="'.WEB_ROOT.'file">
+						Zie de inloggegevens hier
+					</a>';
 				}
 				unset($_POST);
 				$body='';

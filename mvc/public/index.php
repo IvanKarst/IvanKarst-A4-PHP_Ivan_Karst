@@ -44,8 +44,9 @@ session_start();
 								if(str_contains($_SERVER['REQUEST_URI'], 'file')){
 									print '
 										<a class="link_active" href="'.WEB_ROOT.'file">
-											<div>
-												Files
+											<div class="smol">
+												<div class="corner"></div>
+												<div class="mirror_corner">Files</div>
 											</div>
 										</a>
 									';

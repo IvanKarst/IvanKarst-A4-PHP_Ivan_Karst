@@ -58,3 +58,27 @@ body {
 	background-color: #BBBBFF;
 	color: black;
 }
+
+.warning{
+	color: red;
+	text-decoration: underline;
+}
+
+.corner{
+	border-left: #727272 solid 0.5px;
+	border-bottom: #727272 solid 0.5px;
+	height: 11px !important;
+	width: 11px !important;
+	margin: 0;
+}
+.mirror_corner{
+	height: 15px !important;
+	width: 15px !important;
+	margin-left: 5px;
+}
+
+.smol{
+	font-size: 12px;
+	display: flex;
+	padding-left: 10%;
+}
