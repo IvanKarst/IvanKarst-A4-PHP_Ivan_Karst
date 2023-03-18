@@ -23,7 +23,7 @@ session_start();
 					<div class="row">
 						<div class="col-2 divider">
 							<a class="link<?php
-								if(!str_contains($_SERVER['REQUEST_URI'], 'form') && !str_contains($_SERVER['REQUEST_URI'], 'test') && !str_contains($_SERVER['REQUEST_URI'], 'file')){
+								if(!str_contains($_SERVER['REQUEST_URI'], 'form') && !str_contains($_SERVER['REQUEST_URI'], 'red') && !str_contains($_SERVER['REQUEST_URI'], 'test') && !str_contains($_SERVER['REQUEST_URI'], 'file')){
 									print '_active';
 								}
 							?>" href="<?=WEB_ROOT?>">
@@ -59,6 +59,15 @@ session_start();
 							?>" href="<?=WEB_ROOT?>test">
 								<div>
 									Tests
+								</div>
+							</a>
+							<a class="link<?php
+								if(str_contains($_SERVER['REQUEST_URI'], 'red')){
+									print '_active';
+								}
+							?>" href="<?=WEB_ROOT?>red">
+								<div>
+									Red
 								</div>
 							</a>
 						</div>

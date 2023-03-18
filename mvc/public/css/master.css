@@ -70,6 +70,7 @@ body {
 	height: 11px !important;
 	width: 11px !important;
 	margin: 0;
+	border-bottom-left-radius: 5px;
 }
 .mirror_corner{
 	height: 15px !important;
