@@ -66,6 +66,7 @@ session_start();
 							<?php
 								$app = new \mvc\App;
 								print $app;
+								// var_dump($app);
 							?>
 						</div>
 					</div>

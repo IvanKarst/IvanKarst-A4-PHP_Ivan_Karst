@@ -1,35 +1,13 @@
 <?php
 	namespace view;
 	class FormView extends \mvc\View{
-		public function ham($burger){
-			if(isset($burger) && $this->login_check($burger)){
-				$_SESSION['account'] = $burger['nickname'];
-				$_SESSION['check'] = true;
-			} else {
-				$_SESSION['check'] = false;
-				header('');
-			}
-		}
-
-		public function login_check($arr){
-			if(in_array($arr['nickname'], $this->model->login['nicknames'])){
-				$key = array_search($arr['nickname'], $this->model->login['nicknames']);
-				if($arr['password'] == $this->model->login['passwords'][$key]){
-					return true;
-				} else {
-					return false;
-				}
-			} else {
-				return false;
-			}
-		}
-
+		
 		public function getHTML()
 		{
 			if(isset($_POST['login'])){
 				strip_tags($_POST['nickname']);
 				strip_tags($_POST['password']);
-				$this->ham($_POST);
+				$this->controller->ham($_POST);
 				if($_SESSION['check'] == false){
 					$_SESSION['add']  = '<i class="warning">Nickname of Password fout</i>
 						<br/>

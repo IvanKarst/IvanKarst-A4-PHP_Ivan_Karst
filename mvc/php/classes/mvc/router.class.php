@@ -39,11 +39,19 @@
 		}
 
 		public function getModel(){
-			return $this->model;
+			if($this->model != null){
+				return $this->model;
+			} else {
+				return '';
+			}
 		}
 
 		public function getView(){
-			return $this->view;
+			if($this->view != null){
+				return $this->view;
+			} else {
+				return '';
+			}
 		}
 	}
 ?>
